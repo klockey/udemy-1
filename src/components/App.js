@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
+import Greeter from './greeter'
 
 class App extends Component {
   render () {
+    let firstName = 'john'
     return <div>
-      <h1>Hello, World!</h1>
+      <Greeter name={firstName} message='this is a component' />
     </div>
   }
 }
